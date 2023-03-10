@@ -1,0 +1,511 @@
+:root {
+	/* Greens */
+	--eerie-black: #151912;
+	--black-olive: #21271C;
+	--ebony: #444E39;
+	--reseda-green: #5B6C4B;
+	--honeydew: #DEEBD3;
+	/* Main Colors */
+	--color-primary: var(--black-olive);
+	--color-secondary: var(--honeydew);
+	--color-tertiary: var(--ebony);
+	/* Hover Colors */
+	--hover-primary: var(--eerie-black);
+	--hover-secondary: var(--reseda-green);
+	--hover-tertiary: var(--black-olive);
+	/* Accessibility */
+	--access-primary: #FFE082;
+	--access-secondary: #FFC107;
+}
+
+body[data-theme="light"] {
+	/* Main Colors */
+	--color-background: var(--honeydew);
+	--color-text: var(--ebony);
+	--hover-background: var(--reseda-green);
+
+	/* Hero Image */
+	--hero-background: url("../media/hero-brown.jpeg");
+}
+
+body[data-theme="dark"] {
+	/* Main Colors */
+	--color-background: var(--eerie-black);
+	--color-text: var(--honeydew);
+	--hover-background: var(--black-olive);
+
+	/* Hero Image */
+	--hero-background: url("../media/hero-green.jpg");
+}
+
+body {
+	/* Color */
+	background-color: var(--color-background);
+	color: var(--color-text);
+
+	/* Spacing */
+	margin: 0 !important;
+	padding: 0 !important;
+
+	/* Typography */
+	font-family: 'Urbanist', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+	/* Other */
+	cursor: default;
+}
+
+/* Accessibility Features */
+*:focus-visible {
+	/* Colors */
+	outline: 3px solid var(--access-primary);
+	outline-offset: 5px;
+	border-radius: 2pt;
+}
+
+/* Typography */
+p {
+	margin: 0;
+}
+
+a {
+	color: var(--color-secondary);
+	text-decoration: none;
+	
+}
+
+a:hover {
+	color: var(--color-secondary-hover);
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+a.btn {
+	/* Display */
+	display: inline-block;
+	border-radius: 7pt;
+	transition: 200ms ease all;
+
+	/* Spacing */
+	margin: 1rem 0 0 0;
+	padding: 0.7rem 1.2rem;
+}
+
+a.btn::after {
+	content: "\F285";
+
+	/* Display */
+	display: inline-block;
+	opacity: 0;
+	transition: 200ms ease all;
+
+	/* Sizing */
+
+	/* Typography */
+	color: inherit;
+	font-family: bootstrap-icons !important;
+	font-style: normal;
+	font-weight: normal !important;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	vertical-align: -.125em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Spacing */
+	margin-left: -1rem;
+}
+
+a.btn:hover {
+	/* Spacing */
+	padding: 0.7rem 0.5rem 0.7rem 1.2rem;
+
+	/* Typography */
+	text-decoration: none;
+}
+
+a.btn:hover::after {
+	opacity: 1;
+	margin-left: 0.3rem;
+}
+
+a.btn.btn-primary {
+	/* Color */
+	color: var(--color-secondary);
+	background-color: var(--color-primary);
+
+	/* Readability for Dark Backgrounds */
+	border: 3px solid var(--color-primary);
+}
+
+a.btn.btn-primary:hover {
+	/* Color */
+	background-color: var(--hover-primary);
+}
+
+a.btn.btn-secondary {
+	/* Color */
+	color: var(--color-primary);
+	background-color: var(--color-secondary);
+
+	/* Readability for Dark Backgrounds */
+	border: 3px solid var(--color-secondary);
+}
+
+a.btn.btn-secondary:hover {
+	/* Color */
+	background-color: var(--hover-secondary);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2.25rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+h4 {
+	font-size: 1.75rem;
+}
+
+h5 {
+	font-size: 1.5rem;
+}
+
+h6 {
+	font-size: 1.25rem;
+}
+
+.title {
+	font-size: 3rem;
+}
+
+.subtitle {
+	font-size: 1.5rem;
+	font-weight: 400;
+	font-style: italic;
+}
+
+/* Navigation */
+nav {
+	/* Display */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	/* Color */
+	background-color: var(--color-tertiary);
+
+	/* Spacing */
+	padding: 0.3em;
+
+	/* Typography */
+	text-align: start;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+nav .nav-brand {
+	/* Typography */
+	font-size: 2em;
+
+	/* Color */
+	color: var(--color-secondary);
+
+	/* Spacing */
+	margin: 0;
+	padding: 1rem;
+}
+
+nav ul li {
+	/* Display */
+	display: inline-block;
+	list-style: none;
+	text-decoration: none;
+
+	/* Spacing */
+	margin: 0;
+	padding: 1em;
+
+	/* Typography */
+	font-size: 1.2em;
+}
+
+a.nav-link {
+	color: var(--color-secondary);
+}
+
+/* Main */
+main {
+	/* Spacing */
+	margin: 2rem auto;
+	padding: 0 1rem;
+
+	/* Sizing */
+	max-width: 860px;
+}
+
+/* Hero */
+article.hero {
+	/* Display */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	overflow: hidden;
+
+	/* Spacing */
+	margin: 0;
+	padding: 5rem max(calc((100vw - 800px) / 2 - 4rem), 2rem);
+
+	/* Sizing */
+	min-height: 35vh;
+
+	/* Background */
+	background-image: url(../media/hero.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+article.hero h1.title,
+article.hero h2.subtitle {
+	/* Spacing */
+	margin: 0;
+	padding: 0;
+
+	/* Color */
+	color: var(--color-secondary) !important;
+}
+
+article.hero a.btn-hero {
+	/* Spacing */
+	margin: 1rem 0.5rem 0 0;
+
+	/* Color */
+	color: var(--color-primary);
+	background-color: var(--color-secondary);
+}
+
+article.hero a.btn-hero:hover {
+	/* Color */
+	color: var(--hover-primary);
+}
+
+a.btn.btn-hero::after {
+	/* Color */
+	color: var(--cornsilk) !important;
+}
+
+/* Jumbotron */
+article.jumbotron {
+	/* Display */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	overflow: hidden;
+
+	/* Spacing */
+	margin: 0;
+	padding: 5rem max(calc((100vw - 800px) / 2 - 4rem), 2rem);
+
+	/* Sizing */
+	min-height: 35vh;
+}
+
+/* Jumbo Store */
+article.jumbotron--store-container {
+	/* Display */
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 1rem;
+
+	/* Spacing */
+	padding: 1rem;
+}
+.jumbotron--store-container .store-products {
+	/* Display */
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+.jumbotron--store-container .store-text {
+	/* Display */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+
+	/* Sizing */
+	height: 100%;
+}
+
+.store-products .store-product {
+	/* Display */
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+	align-items: center;
+	overflow: hidden;
+	transition: 300ms ease all;
+
+	/* Spacing */
+	margin: 0;
+	padding: 1rem;
+
+	/* Sizing */
+	height: 90%;
+	aspect-ratio: 1;
+	border-radius: 7pt;
+
+	/* Background */
+	background-color: var(--color-tertiary);
+}
+.store-products .store-product:hover {
+	/* Color */
+	background-color: var(--hover-tertiary);
+}
+.store-product .store-product-image {
+	/* Display */
+	border-radius: 7pt;
+
+	/* Spacing */
+	margin: 0.5rem;
+	padding: 0;
+
+	/* Sizing */
+	height: 50%;
+	width: 50%;
+}
+.store-product .store-product-row {
+	/* Display */
+	display: flex;
+	flex-direction: row;
+	align-items: end;
+	gap: 0.5rem;
+
+	/* Spacing */
+	margin: 0;
+	padding: 0;
+}
+.store-product .store-product-title {
+	/* Spacing */
+	margin: 0;
+	padding: 0;
+
+	/* Typography */
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: var(--color-secondary);
+}
+.store-product .store-product-price {
+	/* Spacing */
+	margin: 0;
+	padding: 0;
+
+	/* Typography */
+	font-size: 1rem;
+	line-height: 1.5;
+	font-weight: 400;
+	font-style: italic;
+	color: var(--color-secondary);
+}
+.store-product .store-product-desc {
+	/* Typography */
+	font-size: 0.9rem;
+	font-weight: 400;
+	color: var(--color-secondary);
+	text-align: center;
+}
+
+/* Footer */
+footer {
+	/* Color */
+	background-color: var(--color-tertiary);
+
+	/* Spacing */
+	margin: 1rem 0 0 0;
+	padding: 1rem 1.5rem;
+
+	/* Typography */
+	text-align: left;
+	font-size: 0.95rem;
+}
+
+footer * {
+	/* Color */
+	color: var(--color-secondary);
+}
+
+footer .footer-content {
+	/* Display */
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1em;
+}
+
+footer .footer-content .footer-left,
+footer .footer-content .footer-right {
+	/* Display */
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+	gap: 1rem;
+}
+
+footer .footer-content #footer-pages,
+footer .footer-content #footer-contact {
+	/* Spacing */
+	margin: 0;
+	padding: 0;
+}
+
+footer .footer-content h3 {
+	/* Display */
+	display: inline-block;
+
+	/* Spacing */
+	margin: 0;
+	padding: 0 1.5rem 0 0;
+}
+
+footer .footer-content ul {
+	/* Display */
+	display: inline-flex;
+	flex-direction: row;
+	gap: 1rem;
+
+	/* Spacing */
+	margin: 0;
+	padding: 0;
+
+	/* Typography */
+	list-style: none;
+}
+
+footer .footer-bottom {
+	/* Spacing */
+	margin-top: 1rem;
+	padding: 0;
+
+	/* Typography */
+	text-align: start;
+	font-size: 0.8em;
+}

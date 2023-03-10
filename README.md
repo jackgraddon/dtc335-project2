@@ -1,2 +1,1 @@
-# dtc335-project2
- Major Project 2 for DTC 335
+# DTC 335 - Project 2 - Website for Business
