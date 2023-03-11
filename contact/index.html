@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Green Grounds</title>
+	<title>Contact | Green Grounds</title>
 	<!-- Open Graph Tags -->
 	<meta property="og:title" content="Green Grounds - Sustainable and Organic Coffee" />
 	<meta property="og:description"
@@ -16,7 +16,7 @@
 	<meta property="og:type" content="website" />
 
 	<!-- Styles -->
-	<link rel="stylesheet" href="./style/styles.css">
+	<link rel="stylesheet" href="../style/styles.css">
 
 	<!-- Font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,59 +31,40 @@
 
 <body>
 	<nav>
-		<a href="./" class="nav-brand">
+		<a href="../" class="nav-brand">
 			<i class="bi bi-cup-hot-fill"></i>
 		</a>
 		<ul>
-			<li><a class="nav-link active" href="./">Home</a></li>
-			<li><a class="nav-link" href="./store/">Store</a></li>
-			<li><a class="nav-link" href="./about/">About</a></li>
-			<li><a class="nav-link" href="./contact/">Contact</a></li>
-			<li><a class="nav-link" href="./news/">News</a></li>
+			<li><a class="nav-link" href="../">Home</a></li>
+			<li><a class="nav-link" href="../store/">Store</a></li>
+			<li><a class="nav-link" href="../about/">About</a></li>
+			<li><a class="nav-link active" href="../contact/">Contact</a></li>
+			<li><a class="nav-link" href="../news/">News</a></li>
 			<li><a class="nav-link" id="theme-switcher"><i class="bi bi-circle-half"></i></a></li>
 		</ul>
 	</nav>
 
-	<article class="hero">
-		<h1 class="title">Green Grounds.</h1>
-		<h2 class="subtitle">Sustainable and Organic Coffee</h2>
-		<div class="hero-buttons">
-			<a href="./about/" class="btn btn-hero">Learn More</a>
-			<a href="./store/" class="btn btn-hero">Browse Shop</a>
-		</div>
-	</article>
-
-	<article class="jumbotron jumbotron--store-container">
-			<div class="store-product">
-				<img src="./store/product-media/coffee_coaster_set.png" alt="Ceramic coffee cup (with coffee) on wooden coaster, with two small cookies in front of the cup." class="store-product-image">
-				<div class="store-product-row">
-					<h2 class="store-product-title">Cup & Coaster Set</h2>
-					<p class="store-product-price">$14.95</p>
-				</div>
-				<p class="store-product-desc">
-					Our coffee cups are made from 100% recycled and/or ethically sourced materials. They're also dishwasher-safe!
-				</p>
-				<a href="./store/product/takeaway-cup/" class="btn btn-secondary">Buy Now</a>
+ <main>
+	<h1>Contact Us</h1>
+	<p>Have a question or comment? We'd love to hear from you!</p>
+	<form>
+		<div class="form-row">
+			<div class="form-group">
+				<label for="name">Full Name</label>
+				<input type="text" name="name" id="name" autocomplete="name" placeholder="Avery Smith">
 			</div>
-			<div class="store-product">
-				<img src="./store/product-media/coffee_brew.png" alt="Glass pour-over coffee brewer with wooden collar around neck, on a balance with a filter in the top. A small bowl of coffee beans are to the left."
-				class="store-product-image">
-				<div class="store-product-row">
-					<h2 class="store-product-title">Glass Pour-Over</h2>
-					<p class="store-product-price">$24.95</p>
-				</div>
-				<p class="store-product-desc">
-					Our pour-over coffee brewers are made from 100% recycled glass, and ethically sourced wood. They're also dishwasher-safe!
-				</p>
-				<a href="./store/product/takeaway-cup/" class="btn btn-secondary">Buy Now</a>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" autocomplete="email" placeholder="smith.avery@icloud.com">
 			</div>
-		<div class="store-text">
-			<h1>Green Grounds Store</h1>
-			<p>Join the sustainable coffee movement. Savor the rich, smooth taste of our organic, fair trade coffee beans, and
-	reduce your impact on the planet with our 100% recycled accessories.</p>
-			<a href="./store/" class="btn btn-primary">Shop Now</a>
 		</div>
-	</article>
+		<div class="form-group">
+			<label for="message">Message</label>
+			<textarea name="message" id="message" cols="30" rows="10" placeholder="This form does not submit any content."></textarea>
+		</div>
+		<a class="btn btn-primary">Submit</a>
+	</form>
+ </main>
 
 	<footer>
 		<div class="footer-content">
@@ -99,9 +80,9 @@
 				<div id="footer-pages">
 					<h3>Pages</h3>
 					<ul>
-						<li><a href="./">Home</a></li>
-						<li><a href="./about/">About</a></li>
-						<li><a href="./contact/">Contact</a></li>
+						<li><a href="../">Home</a></li>
+						<li><a href="../about/">About</a></li>
+						<li><a href="../contact/">Contact</a></li>
 					</ul>
 				</div>
 				<div id="footer-contact">
@@ -163,7 +144,7 @@
 		}
 	})();
 
-	
+
 
 	// Theme Switcher
 	document.querySelector('#theme-switcher').addEventListener('click', toggleTheme);
