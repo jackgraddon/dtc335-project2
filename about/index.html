@@ -44,22 +44,41 @@
 		</ul>
 	</nav>
 
- <main>
-	<article>
-		<h1>About Green Grounds</h1>
-		<p>Do esse ipsum enim labore laborum enim eu ipsum ad duis voluptate minim qui Lorem elit. Ea cillum consectetur
-		consectetur elit ipsum culpa quis nostrud qui occaecat reprehenderit nisi enim deserunt. Proident cillum et quis non sit
-		consequat id mollit id Lorem. Veniam fugiat nisi aute ad proident adipisicing ex irure anim veniam anim. Dolor excepteur
-		mollit nostrud sint voluptate id. Labore pariatur sit voluptate ut amet mollit commodo ex deserunt excepteur sit.
-		
-		Laboris sunt cillum aliquip enim sit. Cillum sint commodo ullamco qui magna in irure sint occaecat do sint. Mollit velit
-		ea adipisicing do ut quis. Laboris enim est exercitation et aliqua adipisicing aliquip. Proident ut laborum quis mollit
-		laborum laboris eu commodo incididunt enim quis nulla consectetur culpa. Labore deserunt eiusmod ad pariatur est
-		cupidatat mollit est Lorem.</p>
+	<article class="hero">
+		<div class="hero-content">
+			<h1>About Green Grounds</h1>
+			<p>At Green Grounds, we're passionate about coffee and the environment. We believe that everyone deserves to enjoy a delicious cup of coffee without harming the planet.</p>
+		</div>
 	</article>
-
- </main>
-
+	<main>
+		<article class="row">
+			<div class="col">
+				<h2>Our Mission</h2>
+				<p>At Green Grounds, we're committed to providing high-quality, sustainable, and organic coffee. Our mission is to bring you the best-tasting coffee while also protecting the environment.</p>
+			</div>
+		</article>
+		<article class="row">
+			<div class="col">
+				<p>From the production of the beans to the packaging and transportation of the final product, coffee has a large environmental footprint. That's why we're committed to sourcing our coffee from sustainable and organic farms that prioritize environmental stewardship. We believe that by choosing sustainable coffee, we can help reduce the negative impact of coffee production on the planet.</p>
+			</div>
+			<div class="col">
+				<!-- Chart -->
+				<div class="chart">
+					<div class="chart-bar" style="height: 80%;"></div>
+					<div class="chart-bar" style="height: 60%;"></div>
+					<div class="chart-bar" style="height: 40%;"></div>
+					<div class="chart-bar" style="height: 20%;"></div>
+					<div class="chart-bar" style="height: 10%;"></div>
+				</div>
+			</div>
+		</article>
+		<article class="row">
+			<div class="col">
+				<p>Our team is made up of coffee experts and environmental advocates who are dedicated to bringing you the best-tasting coffee while also protecting the environment. We're proud to have received certifications and awards for our commitment to sustainability and quality.</p>
+				<p>Join us in making a difference, one delicious cup of coffee at a time.</p>
+			</div>
+		</article>
+	</main>
 	<footer>
 		<div class="footer-content">
 			<div class="footer-left">
@@ -97,6 +116,15 @@
 		</div>
 	</footer>
 </body>
+
+<!-- Chart.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js"
+	integrity="sha512-v3ygConQmvH0QehvQa6gSvTE2VdBZ6wkLOlmK7Mcy2mZ0ZF9saNbbk19QeaoTHdWIEiTlWmrwAL4hS8ElnGFbA=="
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+	// Charts
+	var ctx = document.getElementById('myChart').getContext('2d');
+</script>
 
 <script>
 	// Theme Functions

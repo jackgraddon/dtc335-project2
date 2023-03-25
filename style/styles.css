@@ -65,6 +65,7 @@ body {
 /* Typography */
 p {
 	margin: 0;
+	line-height: 1.3rem;
 }
 
 a {
@@ -258,8 +259,8 @@ a.nav-link.active {
 /* Main */
 main {
 	/* Spacing */
-	margin: 2rem auto;
-	padding: 0 1rem;
+	margin: 0;
+		padding: 2rem max(calc((100vw - 800px) / 2 - 4rem), 2rem);
 
 	/* Sizing */
 	max-width: 860px;
@@ -700,6 +701,33 @@ div.news .news-item .news-item-content {
 	font-size: 1rem;
 	font-weight: 400;
 	color: var(--color-secondary);
+}
+
+/* Rows/Cols */
+.row {
+	/* Display */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+
+	/* Spacing */
+	margin: 1rem 0;
+	padding: 0;
+}
+.col {
+	/* Display */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+
+	/* Spacing */
+	margin: 0;
+	padding: 0;
+
+	/* Sizing */
+	width: 100%;
 }
 
 
